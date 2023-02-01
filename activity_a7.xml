@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".a7"
+    android:background="@color/light_back">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="60dp"
+        android:textSize="18sp"
+        android:text="Normal Salad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="60dp"
+        android:textSize="18sp"
+        android:text="Caesar Salad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="60dp"
+        android:textSize="18sp"
+        android:text="Greek Salad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"/>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="60dp"
+        android:textSize="18sp"
+        android:text="Fattoush"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <CheckBox
+        android:id="@+id/checkbox5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="60dp"
+        android:textSize="18sp"
+        android:text="Mesclun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="SALAD"
+        android:textColor="#09466E"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:text="50"
+        android:textColor="#4582AA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/checkBox1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#4582AA"
+        android:text="60"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@id/p1" />
+
+    <TextView
+        android:id="@+id/p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="30dp"
+        android:text="65"
+        android:textColor="#4582AA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@+id/p2" />
+
+    <TextView
+        android:id="@+id/p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#4582AA"
+        android:text="60"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/p3" />
+
+    <TextView
+        android:id="@+id/p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="30dp"
+        android:text="70"
+        android:textColor="#4582AA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/checkbox5"
+        app:layout_constraintTop_toBottomOf="@+id/p4" />
+
+    <soup.neumorphism.NeumorphButton
+        style="@style/ShapeAppearance.Neumorph.Button"
+        app:neumorph_shadowColorDark="#BFE0F8"
+        app:neumorph_shadowColorLight="#E9F5FD"
+        android:id="@+id/order"
+        android:text="ORDER"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
